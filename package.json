@@ -1,0 +1,48 @@
+{
+  "name": "facturerr",
+  "version": "0.0.1",
+  "description": "Make french invoices as pdf with all legal requirements",
+  "keywords": [
+    "invoice",
+    "facture",
+    "france",
+    "pdf",
+    "generator"
+  ],
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "jest",
+    "coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "publish": "npm publish"
+  },
+  "files": [
+    "src/**",
+    "fonts/**",
+    "bin/**"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piloterr/facturerr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piloterr/facturerr/issues"
+  },
+  "homepage": "https://github.com/piloterr/facturerr#readme",
+  "dependencies": {
+    "intl": "^1.2.5",
+    "pdfmake": "^0.1.40"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true
+  },
+  "bin": {
+    "facturerr": "./bin/facturerr"
+  }
+}
